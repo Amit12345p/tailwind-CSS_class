@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link 
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    
+    <script>
+        tailwind.config = {
+          theme: {
+            screens: {
+            'sm': '567px',
+            // => @media (min-width: 640px) { ... }
+
+            'md': '768px',
+            // => @media (min-width: 768px) { ... }
+
+            'lg': '1024px',
+            // => @media (min-width: 1024px) { ... }
+
+            'xl': '1280px',
+            // => @media (min-width: 1280px) { ... }
+
+            '2xl': '1350px',
+            // => @media (min-width: 1536px) { ... }
+        },
+            extend: {
+                screens: {
+                'xs': {'min':'360px','max':'566'},
+                // => @media (min-width: 992px) { ... }
+            },
+              colors: {
+                ram: '#2699fb',
+                amit: 'red'
+              }
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+        <!-- <h1 class= "text-5xl text-ram text-center py-5">Amit Patel</h1>
+        <div class="container bg-red-500 mx-auto">
+        <h1 class= "text-5xl xs:text-left text-ram lg:text-center py-5 lg:py-10">Amit Patel</h1>
+        </div>
+        <div class="container mx-auto">
+            <h1 class= "text-5xl xs:text-left lg:text-center py-5 lg:py-10 text-red-900">Amit Patel</h1>
+            </div>
+
+            <div class="max-w-[1200px] py-5 text-amit grid lg:grid-cols-4 
+            mx-auto gap-5 md:grid-cols-2 sm:grid-cols-2">
+                <div class="bg-[green] py-5 text-center underline">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center col-span-2">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center col-span-2">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center col-span-full">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center col-span-2">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+                <div class="bg-[green] py-5 text-center col-span-2">Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+            </div>
+
+            <div class="max-w-[1320] grid grid-rows-4 grid-flow-col gap-5 mx-auto">
+              <div class="bg-[green] py-5 text-center">1 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 row-span-2 text-center">2 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 text-center">3 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 text-center">4 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 text-center">5 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 text-center">6 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5 text-center">7 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+              <div class="bg-[green] py-5  row-span-4 text-center">8 Random Access Memory is volatile. That means data is retained in RAM as long as the computer is on, but it is lost when the computer is turned off. When the computer is rebooted, the OS and other files are reloaded into RAM, usually from an HDD or SSD.</div>
+            </div>
+            <div class="max-w-[1320px] mx-auto bg-ram text-[red] p-4 text-center">
+              <h1>Welcome to in my life</h1>
+
+            </div>
+
+
+
+
+            <-- <<<card section>>> -->
+              <!-- <div class="max-w-[1320px] mx-auto">
+                <h1 class="text-5xl text-center py-5">Products</h1>
+              </div>
+              <div class="max-w-[1320px] mx-auto grid lg:grid-cols-4 md:grid-cols-2 gap-6 px-20px">
+                <div class="text-center shadow-lg rounded">
+                  <div class="overflow-hidden">
+                  <img class="hover:scale-125 duration-1000" src="flax.jpg"/>
+                </div>
+                  <h3 class="py-2 text-2xl">Cute Dog</h3>
+                  <p class="py-2">Rs: 5000/</p>
+                </div>
+                <div class="text-center shadow-lg rounded">
+                  <div class="overflow-hidden">
+                  <img class="hover:scale-125 duration-1000" src="flax.jpg"/>
+                </div>
+                  <h3 class="py-2 text-2xl">Cute Dog</h3>
+                  <p class="py-2">Rs: 5000/</p>
+                </div>
+                <div class="text-center shadow-lg rounded">
+                  <div class="overflow-hidden">
+                  <img class="hover:scale-125 duration-1000" src="flax.jpg"/>
+                </div>
+                  <h3 class="py-2 text-2xl">Cute Dog</h3>
+                  <p class="py-2">Rs: 5000/</p>
+                </div>
+                <div class="text-center shadow-lg rounded">
+                  <div class="overflow-hidden">
+                  <img class="hover:scale-125 duration-1000" src="flax.jpg"/>
+                </div>
+                  <h3 class="py-2 text-2xl">Cute Dog</h3>
+                  <p class="py-2">Rs: 5000/</p>
+                </div> --> 
+
+
+
+                <div class="max-w-[1320px] md:py-[80] py-5 mx-auto ">
+                  <h1 class="text-4xl text-center">Our Services</h1>
+                </div>
+                <div class="max-w-[1200px] mx-auto py-[30px] grid lg:grid-cols-4 sm:grid-cols-2 gap-6">
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-bounce"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-spin"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-ping"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-bounce"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-spin"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-ping"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-bounce"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                  <div class="group shadow-lg p-4 text-center hover:bg-blue-500 hover:text-white-500 duration-1000">
+                    <i class="fas fa-laptop-code text-4xl text-blue-500 group-hover:text-white duration-1000 animate-spin"></i>
+                    <h3 class="text-xl py-2">Web Design</h3>
+                    <p>shdsgfmf bsjfb fjbjgfsdub dn vjfhbndvc bchg fjv csdn bah</p>
+                  </div>
+                </div>
+
+                
+</body>
+</html>
